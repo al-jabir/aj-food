@@ -1,0 +1,335 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+$one-color:#000;
+$second-color:#575757;
+$bg-color:#fff;
+$btn-color:#FBA24F;
+$text-color:#252525;
+$f-bg:#0B0D17;
+$head-color:#18191F;
+$box:5px 5px 10px rgba(0,0,0,.2);
+
+html{
+  font-size: 52.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  overflow-x: hidden;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 9%;
+  background: $bg-color;
+  box-shadow: $box;
+  position: fixed;
+  width: 100%;
+  .logo{
+    font-size: 3rem;
+    color: $second-color;
+    text-transform: uppercase;
+  }
+  .nav a{
+    padding: .5rem 1rem;
+    font-size: 2.5rem;
+    color: $one-color;
+  }
+  #menu{
+    font-size: 3rem;
+    display: none;
+  }
+}
+.main-page{
+  padding: 3rem 5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  .content{
+    flex: 1 1 45rem;
+    h1{
+      font-size: 5rem;
+      text-transform: capitalize;
+      color: $second-color;
+      padding: 2.5rem 0;
+      span{
+        background: linear-gradient(to right, tomato,lime);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+    }
+    p{
+      font-size: 2.5rem;
+      line-height: 1.5;
+      padding-bottom: 1.5rem;
+    }
+    .btn{
+      background:linear-gradient(to right,purple,tomato);
+      color: #fff;
+      padding: .8rem 3rem;
+      border-radius: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      transition: all .2s ease-in;
+    }
+    .btn:hover{
+      color: tomato;
+      background: black;
+    }
+  }
+  .main-img{
+    flex: 1 1 45rem;
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+.about{
+  padding: 3rem 5%;
+  .about-content{
+    // height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    .about-img{
+      flex: 1 1 45rem;
+      img{
+        width: 100%;
+      }
+    }
+    .about-me{
+      flex: 1 1 45rem;
+      h3{
+        font-size: 5rem;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+      }
+      p{
+        color: $text-color;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        line-height: 1.5;
+      }
+      .btn{
+        background:linear-gradient(to right, purple, tomato);
+        color: #fff;
+        padding: .8rem 3rem;
+        border-radius: 20px;
+        font-size: 2rem;
+        font-weight: bold;
+        transition: all .2s ease-in;
+      }
+    }
+  }
+
+}
+
+.rec{
+  padding: 3rem 5%;
+  .row{
+    .title{
+      text-align: center;
+      padding: 5rem 0;
+      h1{
+        font-size: 5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+      }
+      p{
+        font-size: 2.5rem;
+      }
+    }
+    .cards{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+      gap: 2rem;
+      .card{
+        padding: 2rem;
+        border: 1px solid $second-color;
+        border-radius: 10px;
+        transition: all .2s ease-in-out;
+        &:hover{
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9);
+          border: none;
+        }
+        h3{
+          font-size: 3rem;
+          padding: 1rem;
+          text-transform: uppercase;
+        }
+        p{
+          font-size: 2rem;
+          padding-bottom: 3rem;
+        }
+        .btn{
+          font-size: 1.5rem;
+          padding: .8rem 2rem;
+          background: tomato;
+          color: #000;
+          border-radius: 5px;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.rate{
+  padding: 3rem 5%;
+  .card-no{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.9);
+    padding: 3rem;
+    border-radius: 10px;
+    .card{
+      text-align: center;
+      span{
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+      }
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+    .foot {
+      height: 30vh;
+      background: $f-bg;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+      h1{
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+ 
+@media only screen and (max-width:991px){
+  html{
+    font-size: 55%;
+  }
+  .main-page{
+    padding: 2rem;
+  }
+  .about-content{
+    padding: 2rem;
+  }
+  .rec{
+    padding: 2rem;
+  }
+  .rec{
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width:768px) {
+  html {
+    font-size: 50%;
+  }
+  header{
+    #menu{
+      display: block;
+      transition: all .2s linear;
+      cursor: pointer;
+    }
+    #menu:hover{
+      transform: rotate(360deg);
+    }
+    .nav{
+       position: absolute;
+       top: 100%;
+       left: 0;
+       right: 0;
+       border-top: 5px solid $second-color;
+       border-bottom: 5px solid $second-color;
+       padding: 1rem;
+       margin: 1rem;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+       background: #252525;
+       a{
+         display: block;
+         background: #eee;
+         text-align: center;
+         margin: 1rem;
+         padding: 1rem;
+         text-transform: uppercase;
+       }
+    }
+    .active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  .main-page{
+    flex-direction: column;
+    padding-top: 5rem;
+    .content{
+      order: 2;
+    }
+    .main-img{
+      img{
+        height: 400px;
+      }
+    }
+  }
+  .about-content{
+    flex-direction: column;
+    .about-me{
+     text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width:450px){
+.main-page{
+  .content{
+    h1{
+      text-align: center;
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    p{
+      font-size: 2rem;
+      padding-bottom: 2rem;
+      color: $text-color;
+    }
+    .btn{
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      padding: 2rem;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+  }
+}
+.cards{
+  .card{
+    width: 100%;
+  }
+}
+.foot{
+  padding: none
+  ;
+  h1{
+    font-size: 1.2rem;
+    color: tomato;
+    font-weight: bold;
+  }
+}
+}
