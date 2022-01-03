@@ -72,7 +72,7 @@ header #menu {
 }
 
 .main-page .content h1 {
-  font-size: 5rem;
+  font-size: 10rem;
   text-transform: capitalize;
   color: #575757;
   padding: 2.5rem 0;
@@ -115,8 +115,11 @@ header #menu {
 }
 
 .main-page .main-img img {
-  width: 100%;
-  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  height: 500px;
 }
 
 .about {
@@ -303,6 +306,9 @@ header #menu {
   .main-page {
     padding: 2rem;
   }
+  .main-page .main-img {
+    padding-top: 2rem;
+  }
   .about-content {
     padding: 2rem;
   }
@@ -398,14 +404,11 @@ header #menu {
     font-size: 3rem;
     text-transform: uppercase;
   }
-  .cards .card {
-    width: 100%;
-  }
   .foot {
     padding: none;
   }
   .foot h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: tomato;
     font-weight: bold;
   }

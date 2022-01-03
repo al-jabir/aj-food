@@ -55,7 +55,7 @@ header{
   .content{
     flex: 1 1 45rem;
     h1{
-      font-size: 5rem;
+      font-size: 10rem;
       text-transform: capitalize;
       color: $second-color;
       padding: 2.5rem 0;
@@ -88,8 +88,9 @@ header{
   .main-img{
     flex: 1 1 45rem;
     img{
-      width: 100%;
-      border-radius: 10px;
+      display: flex;
+      margin: auto;
+      height: 500px;
     }
   }
 }
@@ -226,6 +227,9 @@ header{
     font-size: 55%;
   }
   .main-page{
+    .main-img{
+      padding-top: 2rem;
+    }
     padding: 2rem;
   }
   .about-content{
@@ -318,16 +322,12 @@ header{
     }
   }
 }
-.cards{
-  .card{
-    width: 100%;
-  }
-}
+
 .foot{
   padding: none
   ;
   h1{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: tomato;
     font-weight: bold;
   }
