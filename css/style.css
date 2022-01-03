@@ -371,6 +371,9 @@ header #menu {
         -ms-flex-order: 2;
             order: 2;
   }
+  .main-page .content h1 {
+    font-size: 3rem;
+  }
   .main-page .main-img img {
     height: 400px;
   }

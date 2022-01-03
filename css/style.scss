@@ -283,6 +283,9 @@ header{
     flex-direction: column;
     padding-top: 5rem;
     .content{
+      h1{
+        font-size: 3rem;
+      }
       order: 2;
     }
     .main-img{
